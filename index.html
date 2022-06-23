@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Card component</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .wrapper {
+        width: 800px;
+        margin: 100px auto;
+      }
+      .os-product-card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root" class="wrapper"></div>
+
+    <script type="module">
+      import OnlineStorePage from './index.js';
+        const page = new OnlineStorePage();
+        const root = document.querySelector('#root');
+
+        root.append(page.element);
+    </script>
+  </body>
+</html>
